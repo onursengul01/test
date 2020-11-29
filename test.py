@@ -14,8 +14,8 @@ if os.getuid() != 0:
 print("TheFatRat is not found in the system...")
 option = input("Would you like to install TheFatRat? 'y' or 'n': ")
 if option == "y":
-	os.system(f"git clone {gitRepo} {path}" )
-	os.chdir(f"cd {path}/")
+	os.system(f"git clone {gitRepo} /usr/bin/" )
+	os.system(f"cd {path}")
 	os.system("sudo bash setup.sh")
 
 
